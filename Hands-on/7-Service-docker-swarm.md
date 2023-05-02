@@ -44,11 +44,11 @@
 
 ### Step 3: Check how docker containers are schedule on master and slave:
 
-#### Master:
+#### On Master Node:
 
 ![image](https://user-images.githubusercontent.com/37858762/235767702-6f0bfe57-c220-467e-8b1f-1ceae899f2f3.png)
 
-#### Slave:
+#### On Slave Node:
 
 ![image](https://user-images.githubusercontent.com/37858762/235767736-cb41449f-0cce-451c-b4e9-7565362ab15c.png)
 

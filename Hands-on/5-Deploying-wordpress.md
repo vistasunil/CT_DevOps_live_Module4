@@ -84,5 +84,3 @@ volumes:
 `sudo docker-compose down`
 
 ![image](https://user-images.githubusercontent.com/37858762/235761817-d4454af9-9441-4b55-9ae2-be7ea2863946.png)
-
-![](RackMultipart20230502-1-20ov17_html_97339f4941a878e6.png

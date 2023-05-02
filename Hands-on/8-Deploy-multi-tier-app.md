@@ -28,7 +28,7 @@
 
 <div align="right"> <img src=https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-icon-png-image_6315990.png width="20" height="20"> +91 98712 72900 </div>
 
-## MULTI-TIER APP IN DOCKER SWARM IN A DESIGNATED NETWORK
+## MULTI-TIER APP USING DESIGNATED NETWORK
 
 ### Step 1: Create a Docker Network, of type overlay
 
@@ -78,6 +78,6 @@ create table emp(name varchar(20), phone varchar(20));
 
 ![image](https://user-images.githubusercontent.com/37858762/235768647-949d3568-e9b4-487d-8bc6-030b7be200aa.png)
 
-** Record Created Successfully **
+**Record Created Successfully**
 
 ![image](https://user-images.githubusercontent.com/37858762/235768670-2d9f607f-0595-4294-8801-722997ad4406.png)

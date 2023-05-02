@@ -2,7 +2,7 @@
 <img src=https://static.wixstatic.com/media/1c706c_a5df0ad56f894928bf858a74ba744b32~mv2.png/v1/fit/w_2500,h_1330,al_c/1c706c_a5df0ad56f894928bf858a74ba744b32~mv2.png width="400" height="200">
  </div>
 
-# <div align="center"> DOCKER SWARM </p>
+# <div align="center"> DEPLOY MULTI-TIER APP  </p>
 
 # <div align="center"> DevOps Instructor-led Training </div>
 
@@ -28,7 +28,7 @@
 
 <div align="right"> <img src=https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-icon-png-image_6315990.png width="20" height="20"> +91 98712 72900 </div>
 
-## MULTI-TIER APP IN DOCKER SWARM
+## MULTI-TIER APP IN DOCKER SWARM IN A DESIGNATED NETWORK
 
 ### Step 1: Create a Docker Network, of type overlay
 

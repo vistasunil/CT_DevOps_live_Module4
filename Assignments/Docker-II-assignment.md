@@ -35,25 +35,25 @@
 
 #### Complete below tasks as part of this exercise:**
 
-1. Create a directory **project** in your home directory.
-2. Download HTML website source code from [https://www.free-css.com/assets/files/free-css-templates/download/page268/devfolio.zip](https://www.free-css.com/assets/files/free-css-templates/download/page268/devfolio.zip) using **wget** in project folder. Use below command:
+* Create a directory **project** in your home directory.
+* Download HTML website source code from [https://www.free-css.com/assets/files/free-css-templates/download/page268/devfolio.zip](https://www.free-css.com/assets/files/free-css-templates/download/page268/devfolio.zip) using **wget** in project folder. Use below command:
 
 `wget https://www.free-css.com/assets/files/free-css-templates/download/page268/devfolio.zip](https://www.free-css.com/assets/files/free-css-templates/download/page268/devfolio.zip`
 
-1. Unzip this devfolio.zip file to project folder using unzip command.
-2. Deploy all the HTML website content in any apache container, so that its accessible using public IP. Use bind mount to mount folder devfolio from local host to apache container's /var/www/html folder using bind mounts.
-3. Demonstrate how we can dynamically change content in the container by making changes on the host machine
+* Unzip this devfolio.zip file to project folder using unzip command.
+* Deploy all the HTML website content in any apache container, so that its accessible using public IP. Use bind mount to mount folder devfolio from local host to apache container's /var/www/html folder using bind mounts.
+* Demonstrate how we can dynamically change content in the container by making changes on the host machine
 
 ### Exercise 2: Docker Compose
 
-1. Write a docker-compose file to deploy apache and nginx containers using Docker Compose
-2. Apache should be exposed on Port 81 and nginx on port 82
-3. Demonstrate deployment of these containers using docker compose up
-4. Delete altogether using docker compose down
+* Write a docker-compose file to deploy apache and nginx containers using Docker Compose
+* Apache should be exposed on Port 81 and nginx on port 82
+* Demonstrate deployment of these containers using docker compose up
+* Delete altogether using docker compose down
 
 ### Exercise 3: Docker Swarm
 
-1. Initialize a Docker Swarm Cluster
-2. Create an overlay network
-3. Deploy two ubuntu containers in this overlay network.
-4. Demonstrate they can communicate with each other, by pinging them. You may need to install iputils-ping in the ubuntu containers to use ping command.
+* Initialize a Docker Swarm Cluster
+* Create an overlay network
+* Deploy two ubuntu containers in this overlay network.
+* Demonstrate they can communicate with each other, by pinging them. You may need to install iputils-ping in the ubuntu containers to use ping command.

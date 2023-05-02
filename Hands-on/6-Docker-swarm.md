@@ -38,7 +38,7 @@ Since we have already installed docker in our system, along with that docker swa
 
 ![image](https://user-images.githubusercontent.com/37858762/235762604-52bb0a07-18c7-4ca8-9def-668a3f538a89.png)
 
-Copy the token to clipboard.
+Copy the join-command to clipboard.
 
 ### Step 2: Now we will start a new session as worker, and we will join the swarm that we just created. Paste the copied token shown below.
 

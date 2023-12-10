@@ -38,7 +38,7 @@ services:
   sample1:
     image: httpd
     ports:
-    - "5000:5000"
+    - "80:80"
   sample2:
     image: nginx
 ```

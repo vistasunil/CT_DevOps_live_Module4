@@ -21,10 +21,11 @@
 <div align="right"> <img src=https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-icon-png-image_6315990.png width="20" height="20"> +91 98712 72900 </div>
 
 ## DOCKER COMPOSE INSTALLATION
+Refer installtion [page](https://docs.docker.com/compose/install/standalone/)
 
 ### Step 1: Run this command to download the latest version of Docker Compose.
 
-`sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
+`sudo curl -L "https://github.com/docker/compose/releases/download/v2.24.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
 
 ![image](https://user-images.githubusercontent.com/37858762/235759483-73aaf570-db7e-4fe3-9661-23dbde5c51e1.png)
 

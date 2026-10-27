@@ -23,7 +23,7 @@
 #
 </br>
 
-## $`\textcolor{red}{\text{NOTE: USE UBUNTU 22.04 VIRTUAL MACHINES FOR ALL THE LABS}}`$
+## $`\textcolor{red}{\text{NOTE: USE UBUNTU 26.04 LTS VIRTUAL MACHINES FOR ALL THE LABS}}`$
 
 ## Scenario
 **You have been hired as a Devops Engineer in an IT Company. You have been asked to improve the way the company is managing their Docker containers. Following tasks have been assigned:**

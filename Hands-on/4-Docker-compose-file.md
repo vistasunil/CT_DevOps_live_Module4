@@ -33,15 +33,17 @@
 ### Step 2: Write the sample YAML file in **docker-compose.yml** file
 
 ```
-version: '3'
 services:
   sample1:
-    image: httpd
+    image: httpd:2.4
     ports:
     - "80:80"
   sample2:
-    image: nginx
+    image: nginx:1.29
 ```
+
+> **Note:** the top-level `version:` key is obsolete in the Compose Specification and is
+> ignored (it only produces a warning) by Compose v2. Do not add it.
 
 ![image](https://user-images.githubusercontent.com/37858762/235760685-09bd221d-7e83-46d3-8dbe-a5e7f4d9b0da.png)
 
@@ -51,7 +53,7 @@ After adding the above content in the .yml file it should look like this:
 
 ### Step 3: To build this docker-compose file the syntax is the following:
 
-`docker-compose up -d`
+`docker compose up -d`
 
 ![image](https://user-images.githubusercontent.com/37858762/235760750-481599bb-937a-4c24-9974-7883323ecfc8.png)
 

@@ -33,10 +33,9 @@
 ### Step 2: Write the sample YAML file in **docker-compose.yml** file
 
 ```
-version: '3.3'
 services:
   db:
-    image: mysql:5.7
+    image: mysql:8.4
     volumes:
     - db_data:/var/lib/mysql
     restart: always
@@ -56,14 +55,19 @@ services:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
 volumes:
   db_data:
 ```
+
+> **Note:** MySQL 5.7 reached end of life in October 2023 and its image is no longer
+> maintained, so this lab uses the `mysql:8.4` LTS image. The obsolete top-level
+> `version:` key has also been removed.
 ![image](https://user-images.githubusercontent.com/37858762/235761648-abc21d1e-5516-48db-8aaa-f1b70b5069d8.png)
 
 ### Step 3: To build this docker-compose file the syntax is the following
 
-`sudo docker-compose up -d`
+`sudo docker compose up -d`
 
 ![image](https://user-images.githubusercontent.com/37858762/235761697-a22a52f6-5cf7-4529-af57-b0efdeee3b32.png)
 
@@ -73,6 +77,6 @@ volumes:
 
 ### Step 5: Tear down all resources:
 
-`sudo docker-compose down`
+`sudo docker compose down`
 
 ![image](https://user-images.githubusercontent.com/37858762/235761817-d4454af9-9441-4b55-9ae2-be7ea2863946.png)

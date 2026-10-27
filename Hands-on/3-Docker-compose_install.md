@@ -21,22 +21,30 @@
 <div align="right"> <img src=https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-icon-png-image_6315990.png width="20" height="20"> +91 98712 72900 </div>
 
 ## DOCKER COMPOSE INSTALLATION
-Refer installtion [page](https://docs.docker.com/compose/install/standalone/)
 
-### Step 1: Run this command to download the latest version of Docker Compose.
+Refer the [official installation page](https://docs.docker.com/compose/install/linux/).
 
-`sudo curl -L "https://github.com/docker/compose/releases/download/v2.24.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
+On Ubuntu 26.04 LTS, Compose v2 is shipped as a **Docker CLI plugin** (`docker compose`).
+The old standalone `docker-compose` (v1, Python) binary is end-of-life and must not be used.
 
-![image](https://user-images.githubusercontent.com/37858762/235759483-73aaf570-db7e-4fe3-9661-23dbde5c51e1.png)
+### Step 1: If you installed Docker from the official Docker apt repository, the plugin is already available.
 
-### Step 2: Apply execute permissions to the binary
+If you skipped it earlier, install it with:
 
-`sudo chmod +x /usr/local/bin/docker-compose`
+`sudo apt update && sudo apt install -y docker-compose-plugin`
 
-![image](https://user-images.githubusercontent.com/37858762/235759512-9f2a1b82-4d70-4e3e-bd10-682c21005bdb.png)
+### Step 2: Verify the installation.
 
-### Step 3: Run the following command to test the installation.
+`docker compose version`
 
-`docker-compose --version`
+Expected output is similar to `Docker Compose version v2.x.x`.
 
 ![image](https://user-images.githubusercontent.com/37858762/235759534-61b4a39e-bd46-48ae-9a94-69155cf98175.png)
+
+### Step 3 (optional): Enable the `docker-compose` alias.
+
+Some older scripts still call `docker-compose`. Ubuntu provides a shim package for that:
+
+`sudo apt install -y docker-compose-v2`
+
+> **Note:** throughout the remaining labs use `docker compose` (with a space), not `docker-compose`.

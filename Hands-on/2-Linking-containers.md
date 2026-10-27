@@ -22,23 +22,40 @@
 
 ## LINKING CONTAINERS IN DOCKER
 
+> **Note:** the `--link` flag is a legacy Docker feature and is deprecated. The supported
+> way to let containers reach each other by name is a **user-defined bridge network**,
+> which provides automatic DNS resolution between containers. Both approaches are shown below.
+
+### Step 0: Create a user-defined bridge network (recommended approach)
+
+`docker network create mynet`
+
 ### Step 1: Create and Run, two docker containers namely container1 and container2 with Ubuntu image
 
-`docker run –it –name <name-of-container> --link <container-name> -d ubuntu`
+Using a user-defined network (recommended):
+
+```
+docker run -it --name container1 --network mynet -d ubuntu:26.04
+docker run -it --name container2 --network mynet -d ubuntu:26.04
+```
+
+Using the legacy link flag (for reference only):
+
+`docker run -it --name <name-of-container> --link <container-name> -d ubuntu:26.04`
 
 ![image](https://user-images.githubusercontent.com/37858762/235758412-47bbc772-79d2-48cb-b24d-ccc499e1fcc3.png)
 
 ### Step 2: Exec into Container2, and update the container using the following commands:
 
-`docker exec –it <container-name> bash`
+`docker exec -it container2 bash`
 
-`sudo apt-get update`
+`apt-get update`
 
 ![image](https://user-images.githubusercontent.com/37858762/235758446-b6ea882a-9b99-482b-bed0-f4ea2db4e120.png)
 
 ### Step 3: Now install the ping module on your container2
 
-`apt-get install iputils-ping vim`
+`apt-get install -y iputils-ping vim`
 
 ![image](https://user-images.githubusercontent.com/37858762/235758481-28af8120-64fd-4258-becb-80dcab1b3afd.png)
 

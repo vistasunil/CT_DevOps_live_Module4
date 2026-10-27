@@ -32,6 +32,10 @@ A mountable entity which can be used to store data, in the docker filesystem.
 ## Type 2: Bind Mounts
 To mount a directory of the host machine to the docker container.
 
-`docker run -it –v <source-directory>:<destination-directory> -d <container-name>`
+`docker run -it -v <source-directory>:<destination-directory> -d <container-name>`
+
+The equivalent, and now preferred, `--mount` syntax is:
+
+`docker run -it --mount type=bind,source=<source-directory>,target=<destination-directory> -d <container-name>`
 
 ![image](https://user-images.githubusercontent.com/37858762/235757369-9f3687ed-9695-4d5a-906f-b58e79147ba7.png)
